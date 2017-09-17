@@ -28,5 +28,14 @@ This repository includes all the code and assets for the Restaurant Billing Syst
   - Staff Management (Add/Remove Employees):
      - Tracks last employee login
 
+### Documentation
+
+ - Javadoc documentation is in the doc/ folder.
+
+
+## Demo:
+
+Youtube Video Link - https://www.youtube.com/watch?v=xdTuG5_LPJ4&feature=youtu.be
+
 
 
