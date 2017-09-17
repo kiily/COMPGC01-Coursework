@@ -1,0 +1,687 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*Login.fxml */
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+#logInButton{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#logInButton:hover{
+	-fx-background-color:#29CE2F;
+}
+
+
+
+#exitButton{
+	-fx-padding: 5 22 5 22;  
+	-fx-border-color: #e2e2e2;
+    -fx-border-width: 2; 
+    -fx-background-radius: 5;
+    -fx-background-color: #F41008;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #273B27;
+	-fx-padding: 6 6 6 6; 
+	-fx-border-radius: 5;
+	-fx-font-weight: bold;
+	-fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+
+#exitButton:hover{
+	
+	-fx-background-color:#F45353;
+	
+	
+	}
+
+#digitalClock{
+	-fx-font-size: 16pt;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+
+#title{
+	-fx-text-fill:#F9F4EC;
+	-fx-font-weight: bold;
+}
+
+
+.root{
+	-fx-background-color: #1d1d1d;
+	/*-fx-background-image: url("skyline.jpg");*/
+	
+}
+
+/*
+ * EmployeeHome.fxml
+ */
+#welcomeLabel{
+	-fx-font-size: 30px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+   
+}
+
+#empIdLabel{
+	-fx-font-size: 36px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+    
+}
+
+#logOutBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#logOutBtn:hover{
+	-fx-background-color: #3a3a3a;
+}
+
+#addOrderRegion{
+	-fx-background-radius: 8;
+	-fx-border-radius: 8;
+	-fx-border-color: #e2e2e2;
+    -fx-border-width: 5;
+	-fx-background-color:#67D86B;
+}
+
+#addOrderRegion:hover{
+	-fx-background-color:#29CE2F;
+}
+
+#ordersRegion{
+	-fx-background-radius: 8;
+	-fx-border-radius: 8;
+	-fx-border-color: #e2e2e2;
+    -fx-border-width: 5;
+	-fx-background-color:#53F4C4;
+}
+
+#ordersRegion:hover{
+	-fx-background-color: #35D0A1;
+}
+
+
+
+#addOrderLabel{
+	-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 48px;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-weight: bold;
+}
+
+
+#ordersLabel{
+	-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 48px;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-weight: bold;
+    
+    }
+    
+  
+
+.table-view{
+	-fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-padding: 5;
+    
+}
+.table-view.column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view.column-header,.table-view.filler{
+	-fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label{
+	-fx-font-size: 13pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+  /* Menu.fxml */
+
+#titleLabel{
+	
+	-fx-font-size: 36px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+	
+}
+
+#specifyLabel{
+	
+	-fx-font-size: 14px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+	
+}
+
+#backBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#backBtn:hover{
+	-fx-background-color: #3a3a3a;
+}
+
+#addItemBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#addItemBtn:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#remItemBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#F41008;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#remItemBtn:hover{
+	
+	-fx-background-color:#F45353;
+}
+
+/* AdminHome.fxml */
+
+#adminHomeTitleLabel{
+	
+	-fx-font-size: 36px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+	
+}
+
+#staffRegion{
+	-fx-background-radius: 8;
+	-fx-border-radius: 8;
+	-fx-border-color: #e2e2e2;
+    -fx-border-width: 5;
+	-fx-background-color:#FAF4A3;
+}
+
+#staffRegion:hover{
+	-fx-background-color:#F7EC52;
+}
+
+#menuManagerRegion{
+	-fx-background-radius: 8;
+	-fx-border-radius: 8;
+	-fx-border-color: #e2e2e2;
+    -fx-border-width: 5;
+	-fx-background-color:#F7EC52 ;
+}
+
+#menuManagerRegion:hover{
+	-fx-background-color: #FAF4A3 ;
+}
+
+
+/* Staff.fxml */
+
+#addEmpBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#addEmpBtn:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#remEmpBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#F41008;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#remEmpBtn:hover{
+	
+	-fx-background-color:#F45353;
+}
+
+/* Tables */
+
+#employeeHomeBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#employeeHomeBtn:hover{
+	-fx-background-color: #3a3a3a;
+}
+
+.button{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover{
+	-fx-background-color: #3a3a3a;
+}
+
+#adminHomeBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#adminHomeBtn:hover{
+	-fx-background-color: #3a3a3a;
+}
+
+/* Adding Tabs */
+.tab{
+	
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-padding: 5;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    }
+    
+    /* Orders.fxml */
+    
+#orderIdLabel{
+	
+	-fx-font-size: 20px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+	
+}
+
+#tableNumberLabel{
+	
+	-fx-font-size: 20px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+	
+}
+
+#numberOfPeopleLabel{
+	
+	-fx-font-size: 20px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+	
+}
+
+#totalLabel{
+	
+	-fx-font-size: 23px;
+	-fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+	
+}
+
+
+#addItem{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#addItem:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#removeItem{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#F41008;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#removeItem:hover{
+	
+	-fx-background-color:#F45353;
+}
+
+#registerOrderBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#registerOrderBtn:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#closeOrderBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#D88811;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#closeOrderBtn:hover{
+	
+	-fx-background-color:#F41008;
+}
+
+#addItem{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#addItem:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#removeItem{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#F41008;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#removeItem:hover{
+	
+	-fx-background-color:#F45353;
+}
+
+#registerOrderBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#registerOrderBtn:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#closeOrderBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#D88811;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#closeOrderBtn:hover{
+	
+	-fx-background-color:#F41008;
+}
+    
+#finishEditBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#finishEditBtn:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#cancelOrderBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#F41008;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#cancelOrderBtn:hover{
+	
+	-fx-background-color:#F45353;
+}
+
+/* OrderSearch.fxml */
+#searchBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#searchBtn:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+    
+    /*OrderHistory.fxml*/
+    
+#editOrderBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#67D86B;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #273B27;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#editOrderBtn:hover{
+	
+	-fx-background-color:#29CE2F;
+}
+
+#deleteOrderBtn{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:#F41008;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#deleteOrderBtn:hover{
+	
+	-fx-background-color:#F45353;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import uk.ac.ucl.cs.gc01.restaurant_billing_system.objects.DigitalClock?>
+
+<AnchorPane fx:id="logInPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.ucl.cs.gc01.restaurant_billing_system.app.LoginController">
+   <children>
+      <Button fx:id="exitButton" layoutX="332.0" layoutY="353.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="26.0" prefWidth="110.0" text="Exit" />
+      <Pane layoutX="71.0" layoutY="78.0" prefHeight="266.0" prefWidth="305.0">
+         <children>
+            <Button fx:id="logInButton" layoutX="94.0" layoutY="173.0" mnemonicParsing="false" onAction="#login" prefHeight="48.0" prefWidth="118.0" text="LOG IN" />
+            <TextField fx:id="usernameField" layoutX="66.0" layoutY="78.0" prefHeight="30.0" prefWidth="174.0" promptText="Username">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordField" layoutX="66.0" layoutY="118.0" prefHeight="30.0" prefWidth="174.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <DigitalClock fx:id="digitalClock" layoutX="41.0" layoutY="10.0" prefHeight="35.0" prefWidth="224.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </DigitalClock>
+         </children>
+      </Pane>
+      <Label fx:id="title" layoutX="38.0" layoutY="16.0" prefHeight="48.0" prefWidth="374.0" text="YourRestaurantManager">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="specifyLabel" layoutX="6.0" layoutY="377.0" prefHeight="20.0" prefWidth="182.0" text="© Miguel Marin Vermelho">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

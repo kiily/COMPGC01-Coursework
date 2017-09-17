@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.ucl.cs.gc01.restaurant_billing_system.app.OrdersController">
+   <top>
+      <AnchorPane prefHeight="43.0" prefWidth="699.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="tableNumberLabel" layoutX="220.0" layoutY="16.0" text="Table Number: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderIdLabel" layoutX="14.0" layoutY="17.0" text="Order ID: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="numberOfPeopleLabel" layoutX="426.0" layoutY="17.0" text="Number of People: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="orderIdTextField" layoutX="105.0" layoutY="11.0" prefHeight="25.0" prefWidth="58.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="backBtn" layoutX="809.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="52.0" prefWidth="91.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="454.0" prefWidth="616.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="orderTable" layoutX="59.0" layoutY="1.0" prefHeight="452.0" prefWidth="580.0">
+               <columns>
+                  <TableColumn fx:id="foodItemColumn" prefWidth="116.0" text="FoodItem" />
+                  <TableColumn fx:id="quantityColumn" prefWidth="97.0" text="Quantity" />
+                  <TableColumn fx:id="rateColumn" prefWidth="46.0" text="Rate" />
+                  <TableColumn fx:id="specialRequestsColumn" prefWidth="152.0" text="Special Requests" />
+                  <TableColumn fx:id="commentsColumn" prefWidth="159.0" text="Comments" />
+               </columns>
+            </TableView>
+            <Label layoutX="36.0" layoutY="293.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="451.0" prefWidth="298.0" BorderPane.alignment="CENTER">
+         <children>
+            <ChoiceBox fx:id="addItemDescription" layoutX="25.0" layoutY="73.0" prefHeight="25.0" prefWidth="143.0" />
+            <TextArea fx:id="comments" layoutX="25.0" layoutY="133.0" prefHeight="8.0" prefWidth="248.0" />
+            <TextArea fx:id="specialRequests" layoutX="25.0" layoutY="207.0" prefHeight="34.0" prefWidth="248.0" />
+            <Label fx:id="specifyLabel" layoutX="25.0" layoutY="107.0" text="Comments:" />
+            <Label fx:id="specifyLabel" layoutX="25.0" layoutY="180.0" text="Special Requests:" />
+            <Label fx:id="specifyLabel" layoutX="17.0" layoutY="7.0" prefHeight="26.0" prefWidth="138.0" text="Add Items to Order:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="specifyLabel" layoutX="25.0" layoutY="43.0" text="Item Description:" />
+            <Label fx:id="specifyLabel" layoutX="181.0" layoutY="76.0" text="QTY:" />
+            <Spinner fx:id="addQuantity" layoutX="221.0" layoutY="73.0" prefHeight="25.0" prefWidth="52.0" />
+            <Button fx:id="addItem" layoutX="83.0" layoutY="263.0" mnemonicParsing="false" onAction="#addToOrder" prefHeight="43.0" prefWidth="133.0" text="Add Item" />
+            <Label fx:id="specifyLabel" layoutX="17.0" layoutY="318.0" prefHeight="26.0" prefWidth="171.0" text="Remove Items from Order:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="specifyLabel" layoutX="26.0" layoutY="351.0" text="Item Description:" />
+            <ChoiceBox fx:id="remItemDescription" layoutX="25.0" layoutY="371.0" prefHeight="25.0" prefWidth="143.0" />
+            <Label fx:id="specifyLabel" layoutX="181.0" layoutY="374.0" text="QTY:" />
+            <Spinner fx:id="remQuantity" layoutX="221.0" layoutY="371.0" prefHeight="25.0" prefWidth="52.0" />
+            <Button fx:id="removeItem" layoutX="85.0" layoutY="416.0" mnemonicParsing="false" onAction="#removeFromOrder" prefHeight="43.0" prefWidth="140.0" text="Remove Item" />
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="146.0" prefWidth="699.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="totalLabel" layoutX="729.0" layoutY="6.0" text="TOTAL:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button fx:id="closeOrderBtn" layoutX="240.0" layoutY="49.0" mnemonicParsing="false" onAction="#closeOrder" prefHeight="79.0" prefWidth="157.0" text="Close Order" />
+            <Button fx:id="cancelOrderBtn" layoutX="464.0" layoutY="49.0" mnemonicParsing="false" onAction="#cancelOrder" prefHeight="79.0" prefWidth="157.0" text="Cancel Order" />
+            <Button layoutX="727.0" layoutY="49.0" mnemonicParsing="false" onAction="#computeOrderTotal" prefHeight="79.0" prefWidth="157.0" text="Calculate Total" />
+            <Button fx:id="finishEditBtn" layoutX="464.0" layoutY="49.0" mnemonicParsing="false" onAction="#finishEdit" prefHeight="79.0" prefWidth="157.0" text="Finish" />
+            <Button fx:id="registerOrderBtn" layoutX="14.0" layoutY="49.0" mnemonicParsing="false" onAction="#registerOrder" prefHeight="79.0" prefWidth="157.0" text="Add Order" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
