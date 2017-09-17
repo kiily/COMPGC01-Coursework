@@ -22,7 +22,7 @@ This repository includes all the code and assets for the Restaurant Billing Syst
   - Username - password login
   - Exit button (Stop app)
   
-### Admin Interface (exlusive features)
+### Admin Interface (exclusive features)
 
   - Menu Management (Add/Remove/Update Items)
   - Staff Management (Add/Remove Employees):
