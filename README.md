@@ -1,6 +1,8 @@
 # COMPGC01-Coursework - Restaurant Management Billing System
 
-This repository includes all the code and assets for the Restaurant Billing System developed as part of the COMPGC01 Coursework at UCL. This is based on a fictional restaurant layout.
+This repository includes all the code and assets for the Restaurant Billing System developed as part of the COMPGC01 Coursework at UCL. This is based on a fictional restaurant layout. The application may be run from the supplied jar file.
+
+The application was developed using JavaFX and SceneBuilder.
 
 ## Main Application Features:
 
@@ -35,7 +37,8 @@ This repository includes all the code and assets for the Restaurant Billing Syst
 
 ## Demo:
 
-Youtube Video Link - https://www.youtube.com/watch?v=xdTuG5_LPJ4&feature=youtu.be
+Video Demonstration Available on Youtube - https://www.youtube.com/watch?v=xdTuG5_LPJ4&feature=youtu.be
 
-
+<a href="http://www.youtube.com/watch?v=xdTuG5_LPJ4" target="_blank">
+ <img src="http://img.youtube.com/vi/xdTuG5_LPJ4/0.jpg" alt="Demo" width="240" height="180" border="10" /></a>
 
